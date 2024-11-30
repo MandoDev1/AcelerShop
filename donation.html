@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate to Our Cause</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #83a4d4, #b6fbff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .donation-container {
+      text-align: center;
+      max-width: 500px;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .donation-container h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .donation-container p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #777;
+    }
+    .donation-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .donation-container button {
+      background-color: #28a745;
+      color: white;
+      font-size: 1em;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .donation-container button:hover {
+      background-color: #218838;
+    }
+    .donation-container img {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="donation-container">
+    <img src="images (2).png" alt="Donate Icon">
+    <h1>Support Our Cause</h1>
+    <p>Your contribution makes a difference. Thank you for your generosity!</p>
+
+    <!-- PayPal Form -->
+    <form action="https://www.paypal.com/donate" method="post" target="_blank">
+      <input type="hidden" name="business" value="your-paypal-email@example.com">
+      <input type="hidden" name="currency_code" value="USD">
+      <label for="amount">Donation Amount ($):</label>
+      <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+</body>
+</html>

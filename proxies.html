@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .proxy-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .proxy-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .proxy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .proxy-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .proxy-card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Proxy List</h1>
+    <div class="proxy-container">
+        <div class="proxy-card">
+            <h2>Proxy 1</h2>
+            <p><b>IP:</b> 192.168.1.1</p>
+            <p><b>Port:</b> 8080</p>
+            <p><b>Location:</b> United States</p>
+        </div>
+        <div class="proxy-card">
+            <h2>Proxy 2</h2>
+            <p><b>IP:</b> 203.0.113.5</p>
+            <p><b>Port:</b> 3128</p>
+            <p><b>Location:</b> United Kingdom</p>
+        </div>
+        <div class="proxy-card">
+            <h2>Proxy 3</h2>
+            <p><b>IP:</b> 198.51.100.22</p>
+            <p><b>Port:</b> 80</p>
+            <p><b>Location:</b> Japan</p>
+        </div>
+        <div class="proxy-card">
+            <h2>Proxy 4</h2>
+            <p><b>IP:</b> 203.0.113.10</p>
+            <p><b>Port:</b> 443</p>
+            <p><b>Location:</b> Germany</p>
+        </div>
+    </div>
+    <footer>
+        © 2024 Proxy Showcase | Crafted with ❤️ for Developers
+    </footer>
+</body>
+</html>
